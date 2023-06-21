@@ -1,0 +1,384 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ----------------------reset------------------------------------- */
+
+
+
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    background-color: hsl(36, 100%, 99%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.image-desktop {
+    display: none;
+}
+
+.navbar-links {
+    display: none;
+}
+
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+    color: hsl(5, 85%, 63%);
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.site-main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-main-text-container {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.1;
+    color: hsl(240, 100%, 5%);
+    margin-bottom: 15px;
+}
+
+
+.main-text-container-description-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.main-text-container-description-button p {
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.main-text-container-description-button button {
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.7;
+    padding: 9px 35px;
+    cursor: pointer;
+}
+
+.main-text-container-description-button button:hover,
+.main-text-container-description-button button:focus {
+    background-color: hsl(240, 100%, 5%);
+}
+
+
+
+.black-container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px 20px;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.new-title {
+    color: hsl(35, 77%, 62%);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.title:hover,
+.title:focus {
+    color: hsl(35, 77%, 62%);
+}
+
+
+
+
+.sub-title {
+    color: hsl(233, 8%, 79%);
+    font-size: 13px;
+    line-height: 1.7;
+    padding-bottom: 25px;
+    border-bottom: 1px solid hsla(233, 8%, 79%, 0.50);
+}
+
+
+.sub-title:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.bottom-article img {
+    max-width: 100px;
+}
+
+.bottom-article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+.bottom-number {
+    color: hsl(233, 8%, 79%);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.bottom-title a {
+    color: hsl(240, 100%, 5%);
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+.bottom-title a:hover,
+.bottom-title a:focus {
+    color: hsl(5, 85%, 63%);
+}
+
+
+.second-container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+}
+
+.bottom-text {
+    color: hsl(236, 13%, 42%);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* -------------------MEDIA----------------------------- */
+
+@media (min-width:900px) {
+
+
+    .main-container {
+        max-width: 80%;
+    }
+
+
+    .icon-menu {
+        display: none;
+    }
+
+    .navbar-links {
+        display: flex;
+    }
+
+    .navbar-links ul,
+    .navbar-links li,
+    .navbar-links a {
+        display: flex;
+        text-decoration: none;
+        gap: 40px;
+        font-size: 15px;
+        color: hsl(236, 13%, 42%);
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image-mobile {
+        display: none;
+    }
+
+    .image-desktop {
+        display: flex;
+    }
+
+    .site-main {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-bottom: 70px;
+    }
+
+
+
+    .main-text-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        align-content: flex-end;
+        gap: 30px;
+    }
+
+    .title-main-text-container {
+        min-width: 50%;
+        margin-bottom: 0px;
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 1.1;
+        color: hsl(240, 100%, 5%);
+    }
+
+
+
+    .black-container {
+        margin: 0 0;
+        justify-content: space-evenly;
+        min-width: 30%;
+    }
+
+
+    .second-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    .bottom-article {
+        align-items: flex-end;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+
+    .main-article {
+        max-width: 70%;
+        justify-content: space-between;
+    }
+
+
+}
